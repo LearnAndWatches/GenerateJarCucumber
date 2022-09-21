@@ -10,10 +10,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.framework.connection.DriverSingleton;
+import cucumber.framework.constant.Constants;
+import cucumber.framework.utils.Utils;
 
 public class LoginPage {
 
 	private WebDriver driver;
+	private String strDelay = Constants.GLOB_PARAM_DELAY;
 	
 	public LoginPage() {
 		this.driver = DriverSingleton.getDriver();
@@ -47,7 +50,9 @@ public class LoginPage {
 	//scenario
 	public void login(String username, String password) {
 		this.username.sendKeys(username); //step
+		Utils.delay(1, strDelay);
 		this.password.sendKeys(password);
+		Utils.delay(1, strDelay);
 	}
 	
 	public void clickBtnLogin() {

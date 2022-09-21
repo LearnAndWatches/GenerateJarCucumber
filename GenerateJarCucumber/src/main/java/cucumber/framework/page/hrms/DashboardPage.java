@@ -6,9 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import cucumber.framework.connection.DriverSingleton;
+import cucumber.framework.constant.Constants;
+import cucumber.framework.utils.Utils;
 
 public class DashboardPage {
 
+	private String strDelay = Constants.GLOB_PARAM_DELAY;
+	
 	private WebDriver driver;
 	
 	public DashboardPage() {
@@ -24,6 +28,7 @@ public class DashboardPage {
 	
 	public void goToMenuDashboard() {
 		menuDashboard.click();
+		Utils.delay(10, strDelay);
 	}
 	
 	public String getTxtDashboardPage() {
