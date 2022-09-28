@@ -12,7 +12,6 @@ public class DriverSingleton {
 
 	private static DriverSingleton instance = null;
 	private static WebDriver driver;
-//	private static String[] arrScene;
 	
 	private DriverSingleton(String driver) 
 	{
@@ -36,7 +35,7 @@ public class DriverSingleton {
 		}
 		
 		return instance;
-	}	
+	}
 	
 	public static WebDriver getDriver() 
 	{
@@ -48,10 +47,8 @@ public class DriverSingleton {
         instance = null;
         try{
             driver.quit();
-            } catch(NullPointerException e){
-            	System.out.println("END!!");
-//            	getInstance(Constants.CHROME);
-            }
-//        driver.quit();
+        } catch(NullPointerException e){
+        	System.out.println("END!!");
+        }
     }
 }
