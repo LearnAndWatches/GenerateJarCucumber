@@ -4,8 +4,9 @@ import java.io.File ;
 import net.sourceforge.tess4j.Tesseract ;  
 import net.sourceforge.tess4j.TesseractException ;  
 /*
- * https://github.com/tesseract-ocr/tessdata.git
- * https://github.com/tesseract-ocr/tessdata.git
+ * https://github.com/tesseract-ocr/tessdata.git // download dulu dari sini ,lalu extract file rar ke folder di laptop kailan
+ * https://github.com/tesseract-ocr/tessdata.git // download dulu dari sini ,lalu extract file rar ke folder di laptop kailan
+ 	pilih salah satu di antara kedua itu
  */
 public class OCRExample {
 
