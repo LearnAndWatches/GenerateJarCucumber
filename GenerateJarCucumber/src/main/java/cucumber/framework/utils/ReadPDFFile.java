@@ -18,7 +18,7 @@ public class ReadPDFFile {
 	 
 	 String strA = rPDFF.getTextPDFOne("C:\\Users\\pollc\\OneDrive\\Desktop\\Compare-Image\\New folder\\22_agreement_1660030862-old.pdf");
 	 String strB = rPDFF.getTextPDFOne("C:\\Users\\pollc\\OneDrive\\Desktop\\Compare-Image\\New folder\\22_agreement_1660030862.pdf");
-//	 System.out.println(strA);
+	 System.out.println(strA);
 	 System.out.println(strB);
 //	 System.out.println(strB.equals(strA));
      }
